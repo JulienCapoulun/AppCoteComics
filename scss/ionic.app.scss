@@ -1,0 +1,58 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+*/
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+// My custom color. I’ll override the default for $positive.
+// Note that it’s before we load the rest of Ionic.
+// This is important!
+$stable:                        #EBA043 !default;
+$bigbg:      "../img/bg.jpg";
+
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+
+
+ion-tabs.tabs-color-active-positive .tab-item.tab-item-active, ion-tabs.tabs-color-active-positive .tab-item.active, ion-tabs.tabs-color-active-positive .tab-item.activated{
+	color: #E23A3A;
+	
+}
+.logo{
+	float: right;
+	position: absolute;
+	z-index: 10;
+	margin: 2px 0 0 147px;
+}
+.bar.bar-stable .title{
+	margin: 0 0 0 0px;
+}
+
+//Ajout d'un background pour la home
+.scroll-bg {
+  background: url($bigbg) no-repeat center 18px fixed;
+  background-size: cover;
+}
+
+
+.custom-video a{
+	padding-left: 20px !important;
+}
+.video-title{
+	overflow: visible;
+	white-space: normal !important;
+}

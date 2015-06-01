@@ -1,0 +1,12 @@
+{
+  "name": "CoteComics",
+  "app_id": "03696276",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
+}

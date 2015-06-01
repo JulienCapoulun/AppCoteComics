@@ -1,0 +1,12 @@
+<ion-view view-title="ÉMISSIONS">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right custom-video" ng-repeat="video in videos" type="item-text-wrap" href="#/tab/video/{{video[0].id}}">
+        <h2 class="video-title">{{video[0].title}}</h2>
+        <img src="{{video[0].img}}" width="140px" height="100px">
+        <p class="video-title"></p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
